@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "0188c3fe-86e4-4874-bed0-44407fb82a09",
+		"name": "x-test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3352208"
+	},
+	"item": [
+		{
+			"name": "company",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 123",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/company/b3aeddb1-26e3-4824-a51c-b2c15a8e0523",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"b3aeddb1-26e3-4824-a51c-b2c15a8e0523"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "company",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleGFuZGVyIEJ1bGFraG92In0.AYqelvlGmQzzhW9q7dkk9F0pjG51riRCAbBWHpDS79s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"First9\",\n    \"description\" : \"asdasd\",\n    \"amount_of_employees\" : 10,\n    \"registered\" : true,\n    \"type\" : \"Corporations\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/company",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "company",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleGFuZGVyIEJ1bGFraG92In0.AYqelvlGmQzzhW9q7dkk9F0pjG51riRCAbBWHpDS79s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"First9\",\n    \"description\" : \"asdasd\",\n    \"amount_of_employees\" : 100,\n    \"registered\" : true,\n    \"type\" : \"Corporations\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/company/b3aeddb1-26e3-4824-a51c-b2c15a8e0523",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"b3aeddb1-26e3-4824-a51c-b2c15a8e0523"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "company",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQWxleGFuZGVyIEJ1bGFraG92In0.AYqelvlGmQzzhW9q7dkk9F0pjG51riRCAbBWHpDS79s",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/company/929a2882-8db7-4662-b96e-41a77fc02130",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"company",
+						"929a2882-8db7-4662-b96e-41a77fc02130"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

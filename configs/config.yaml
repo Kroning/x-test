@@ -1,0 +1,21 @@
+Server:
+  Port: ":8080"
+  Development: true
+  JWTKey: ff8fb0cd553110efd485cb4d5a1feaad
+  # Pass nginx reverse proxy IP so Gin could
+  # properly detect client IP 
+  TrustedReverseProxies:
+
+Logger:
+  Level: debug
+
+Postgres:
+  Host: localhost
+  User: root
+  Password: root
+  Dbname: xtest
+  Port: 5433
+  MaxIdleConns: 20
+  MaxOpenConns: 100
+  MigrationsDirPath: "file://migrations"
+
